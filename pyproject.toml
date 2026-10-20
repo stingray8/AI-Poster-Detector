@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "posterdetect"
+version = "0.1.0"
+description = "Detect AI-generated artwork from camera photos of posters/prints"
+requires-python = ">=3.9"
+dependencies = [
+  "numpy",
+  "opencv-python-headless",
+  "pillow",
+  "scikit-learn",
+  "joblib",
+  "tqdm",
+]
+
+[project.optional-dependencies]
+torch = ["torch", "open_clip_torch", "transformers"]
+dev = ["pytest"]
+
+[tool.setuptools]
+packages = ["posterdetect"]

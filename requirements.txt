@@ -1,0 +1,11 @@
+numpy
+opencv-python-headless
+pillow
+scikit-learn
+joblib
+tqdm
+pytest
+# for feature extraction (needs a GPU for reasonable speed):
+torch
+open_clip_torch
+transformers
